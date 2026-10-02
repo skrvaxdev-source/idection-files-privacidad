@@ -409,7 +409,7 @@
       <p class="lede">How IDection Files handles your data when it manages files on your phone, on your network, in encrypted folders, and in your backups.</p>
       <div class="meta-row">
         <span><strong>App:</strong> IDection Files</span>
-        <span><strong>Policy version:</strong> 1.0</span>
+        <span><strong>Policy version:</strong> 1.1</span>
         <span><strong>Last updated:</strong> October 2, 2026</span>
       </div>
     </div>
@@ -538,7 +538,7 @@
           <thead><tr><th>Permission</th><th>Why</th></tr></thead>
           <tbody>
             <tr><td class="perm-name">MANAGE_EXTERNAL_STORAGE ("All files access")</td><td>IDection Files is a file manager: it needs to see, copy, move, rename and delete files in any folder of your phone's storage, and to keep the trash and the audit log in a visible folder. Android asks you to grant it by hand in its settings.</td></tr>
-            <tr><td class="perm-name">READ_EXTERNAL_STORAGE / READ_MEDIA_AUDIO</td><td>Reading the files of a local folder you choose, on older Android versions or when "All files access" has not been granted.</td></tr>
+            <tr><td class="perm-name">READ_EXTERNAL_STORAGE</td><td>Reading the files of a local folder you choose on Android 12 and earlier, where it complements "All files access".</td></tr>
             <tr><td class="perm-name">INTERNET</td><td>Connecting to your connectors (SMB, WebDAV, FTP/FTPS, DLNA), to Google Drive, and serving files when you turn on a server.</td></tr>
             <tr><td class="perm-name">ACCESS_NETWORK_STATE / ACCESS_WIFI_STATE</td><td>Knowing whether a network is available, and making servers listen only on your Wi-Fi network.</td></tr>
             <tr><td class="perm-name">FOREGROUND_SERVICE / FOREGROUND_SERVICE_DATA_SYNC</td><td>Finishing long copies, moves and backups when you leave the app, with a notification that shows their progress.</td></tr>
@@ -584,6 +584,7 @@
       <h2><span class="num">§10</span> Changes to this policy</h2>
       <p>If we change what data the app handles or where it goes, we will update this same page and the date in the header. Important changes (for example, a new destination for your data) will also be announced inside the app.</p>
       <ul>
+        <li><strong>Version 1.1 (October 2, 2026):</strong> the app no longer requests access to your audio files (READ_MEDIA_AUDIO): local connectors use "All files access", like the rest of the app. Nothing changes in what data is handled or shared.</li>
         <li><strong>Version 1.0 (October 2, 2026):</strong> first published version.</li>
       </ul>
     </section>
@@ -598,7 +599,7 @@
 
 <footer>
   <hr class="rule">
-  <p>IDection Files — Privacy Policy · Version 1.0 · October 2, 2026</p>
+  <p>IDection Files — Privacy Policy · Version 1.1 · October 2, 2026</p>
 </footer>
 </body>
 </html>
