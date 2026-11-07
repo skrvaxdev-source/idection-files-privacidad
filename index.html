@@ -409,7 +409,7 @@
       <p class="lede">How IDection Files handles your data when it manages files on your phone, on your network, in encrypted folders, and in your backups.</p>
       <div class="meta-row">
         <span><strong>App:</strong> IDection Files</span>
-        <span><strong>Policy version:</strong> 1.7</span>
+        <span><strong>Policy version:</strong> 1.8</span>
         <span><strong>Last updated:</strong> November 7, 2026</span>
       </div>
     </div>
@@ -481,8 +481,8 @@
         </div>
         <div class="summary-row">
           <div class="label" data-label="Destination">Google Play</div>
-          <div data-label="What is sent">The purchase of the Plus add-on — Google processes the payment, not us</div>
-          <div class="dim" data-label="When">Only if you buy Plus or restore your purchase</div>
+          <div data-label="What is sent">The purchase of Plus or of one of its packs (Servers, Encryption, Cloud) — Google processes the payment, not us</div>
+          <div class="dim" data-label="When">Only if you buy Plus or a pack, or restore your purchases</div>
         </div>
         <div class="summary-row">
           <div class="label" data-label="Destination">Google<br><span class="dim">(Block Store, your Google backup)</span></div>
@@ -555,7 +555,7 @@
         <li><strong>Google</strong>, when you use Google Drive as a backup destination (encrypted parts and the authorization of your account) or save a folder key in Google (end-to-end encrypted). These are handled under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
         <li><strong>Dropbox</strong>, when you use Dropbox as a backup destination (encrypted parts and the authorization of your account). These are handled under <a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox's Privacy Policy</a>.</li>
         <li><strong>pCloud (pCloud AG)</strong>, when you use pCloud as a backup destination (encrypted parts and the authorization of your account). These are handled under <a href="https://www.pcloud.com/privacy_policy/" target="_blank" rel="noopener">pCloud's Privacy Policy</a>.</li>
-        <li><strong>Google Play (Google LLC)</strong>, which processes the purchase of the Plus add-on through Google Play Billing. We only receive confirmation that the purchase exists, never your payment method or banking details.</li>
+        <li><strong>Google Play (Google LLC)</strong>, which processes the purchase of Plus and its packs through Google Play Billing. We only receive confirmation that the purchase exists, never your payment method or banking details.</li>
         <li><strong>Devices on your Wi-Fi</strong> that sign in to a server you turned on, and other IDection Files on your local network, which can see this device's name and its visible servers (never their passwords; see "Nearby IDection devices" in §3).</li>
         <li><strong>Your password manager</strong>, if you use one: the name and password of an encrypted folder, through Android's autofill.</li>
       </ul>
@@ -606,10 +606,17 @@
     </section>
 
     <section id="purchases">
-      <h2><span class="num">§8</span> Purchases: the Plus add-on</h2>
-      <p>IDection Files works <strong>without ads</strong> in its free mode: your files on the phone and on your network (SMB, WebDAV, FTP/FTPS, SFTP and DLNA), the trash, protected files, the audit log, encrypted folders, backups to your own network made by hand, opening any backup on your network, and high-speed copy from another IDection Files that has its server turned on.</p>
-      <p>The <strong>Plus</strong> add-on is a single purchase — it is not a subscription and it is never charged on a recurring basis. It unlocks: the cloud (backups to Google Drive, Dropbox and pCloud, and S3-compatible storage), turning on the WebDAV, FTP and SFTP servers of the Services tab (including high-speed copy over a hotspot, on the device that offers it), and scheduled backups. Without Plus nothing you created is deleted: scheduled backups are paused and servers simply stay off.</p>
-      <p>It is processed entirely through Google Play Billing; you can restore your purchase on any device where you sign in with the same Google account, using the "Restore purchase" button on the Plus screen. If you have a Plus promo code, you redeem it in Google Play like any promo code. To know that Plus was bought, the app only asks Google Play on your phone, and remembers the answer on the phone so scheduled backups can run while the app is closed.</p>
+      <h2><span class="num">§8</span> Purchases: Plus and its packs</h2>
+      <p>IDection Files works <strong>without ads</strong> in its free mode: your files on the phone and on your network (SMB, WebDAV, FTP/FTPS, SFTP and DLNA), the trash, protected files, the audit log, and opening, viewing, extracting and deleting what is in your encrypted folders and backups: your files are never held hostage.</p>
+      <p>Three <strong>packs</strong> can be bought separately, or all of them together as <strong>Plus</strong>. Each is a single purchase — not a subscription and never charged on a recurring basis:</p>
+      <ul>
+        <li><strong>Servers:</strong> turning on the WebDAV, FTP and SFTP servers of the Services tab, also on the phone's own hotspot.</li>
+        <li><strong>Encryption:</strong> creating encrypted folders and adding files to them, and backups, made by hand or scheduled.</li>
+        <li><strong>Cloud:</strong> Google Drive, Dropbox, pCloud and S3-compatible storage, also as backup destinations (backups also need Encryption).</li>
+      </ul>
+      <p>Without a pack nothing you created is deleted: scheduled backups are paused and servers simply stay off.</p>
+      <p><strong>Encryption</strong> has a free 90-day trial, which can be started until March 31, 2027 and ends on April 1, 2027 at the latest. The trial is not a purchase: the app keeps its start date only on your phone and never sends it anywhere. When it ends, your encrypted folders and backups still open for free.</p>
+      <p>Purchases are processed entirely through Google Play Billing; you can restore them on any device where you sign in with the same Google account, using "Restore purchase" on the purchase screen. If you have a promo code, you redeem it in Google Play like any promo code. To know what was bought, the app only asks Google Play on your phone, and remembers the answer on the phone so scheduled backups can run while the app is closed.</p>
     </section>
 
     <section id="children">
@@ -621,6 +628,7 @@
       <h2><span class="num">§10</span> Changes to this policy</h2>
       <p>If we change what data the app handles or where it goes, we will update this same page and the date in the header. Important changes (for example, a new destination for your data) will also be announced inside the app.</p>
       <ul>
+        <li><strong>Version 1.8 (November 7, 2026):</strong> the single Plus add-on becomes Plus and three packs (Servers, Encryption and Cloud), each a single purchase through Google Play Billing, and Encryption gets a free 90-day trial whose start date stays on the phone. Nothing else changes in what data is handled or where it goes.</li>
         <li><strong>Version 1.7 (November 7, 2026):</strong> the contact address changes to support@idection.com (messages to the previous address still reach us). File servers can also listen on the hotspot this phone shares. We describe what the app shows to other IDection Files on your local network through "Nearby IDection devices" (the name of this device and its visible servers, never their passwords) and the CHANGE_WIFI_MULTICAST_STATE permission it uses. Nothing else changes in what data is handled or where it goes.</li>
         <li><strong>Version 1.6 (October 22, 2026):</strong> pCloud is added as an optional backup destination, with access limited to the app's own folder and your backups encrypted on your phone, as with Google Drive and Dropbox. The app now offers the <strong>Plus</strong> add-on, a single purchase processed by Google Play Billing (see §8); we never receive your payment details. Nothing else changes in what data is handled or where it goes.</li>
         <li><strong>Version 1.5 (October 4, 2026):</strong> the storage services tested with the app are named, in alphabetical order: Backblaze B2, Cloudflare R2, Dropbox, Google Drive, IDrive e2, Koofr and Wasabi. Nothing changes in what data is handled or where it goes.</li>
@@ -642,7 +650,7 @@
 
 <footer>
   <hr class="rule">
-  <p>IDection Files — Privacy Policy · Version 1.7 · November 7, 2026</p>
+  <p>IDection Files — Privacy Policy · Version 1.8 · November 7, 2026</p>
 </footer>
 </body>
 </html>
